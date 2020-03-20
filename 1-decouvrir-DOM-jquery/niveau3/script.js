@@ -1,5 +1,3 @@
-var listOfMovie = [];
-
 $(document).ready(function() {
 
     $("#refresh").click(function() {
@@ -20,7 +18,8 @@ function htmlDivElement(data) {
 }
 
 function splitFile(data) {
-    return (data.split('\n'));
+
+    data.split('\n');
 }
 //function htmlDivElement(movie) {
 
@@ -32,7 +31,7 @@ function splitFile(data) {
 
 function createMovie(i, n, l) {
 
-    var listOfMovie = { i: index, n: data, l: length };
+    var movie = { i: index, n: data, l: length };
     return movie;
 }
 
