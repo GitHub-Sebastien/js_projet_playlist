@@ -1,46 +1,52 @@
-$(document).ready(function() {
+$(document).ready(function() { //Permet d'éxécuter des fonctions quand le DOM est pret 
 
-    $("#refresh").click(function() {
-        $.get("playlist.txt", function(data) {
+    $("#refresh").click(function() { // Selectionne le bouton identifier avec l'id refresh.Utilise la fonction .click sur ce bouton qui quand on appuira dessus
+        $.get("playlist.txt", function(data) { // Prends le fichier playlist.txt sous forme de la variable data 
 
-            $.each(splitFile(data), function(index, data) {
-                console.log(data);
+            $.each(splitFile(data), function(index, line) {
+                /* On utilise la fonction $.each qui prend en paramétre la fonction splitFile qui elle prend en paramétre data qui va séparer les ligne via le paramétre \n
+                 */
 
-                $('ul').append(htmlDivElement(data));
+                var index = line[0];
+                var name = line[1];
+                var length = line[2];
+                var movie = createMovie(index, name, length);
+
+
+                //console.log(movie);
+                $('ul').append(htmlDivElement(movie));
+                console.log(movie);
             });
         });
     });
 });
 
-function htmlDivElement(data) {
+function htmlDivElement(movie) {
 
-    return '<div class="divFilm">' + data + '</div>';
+    return '<div class="divFilm">' + movie.index + movie.name + movie.length + '</div>';
 }
 
 function splitFile(data) {
 
-    data.split('\n');
+    var result = []; //Création de la variable result qui correspond a un tableau
+    var listOfLine = (data.split('\n')); //Creation de la variable listOfLine qui contient les 'data.split'  
+    listOfLine.forEach(line => { /*On utilise la variable listOfLine sur laquelle on applique un forEach qui prend en parametre une variable line, ensuite on crée une variable tab qui elle correspond */
+        var tab = line.split(',');
+        result.push(tab);
+    });
+    return result;
 }
-//function htmlDivElement(movie) {
-
-//var html = "";
-
-//return html;
-
-//}
 
 function createMovie(i, n, l) {
 
-    var movie = { i: index, n: data, l: length };
-    return movie;
+    var m = { index: i, name: n, length: l };
+    return m;
 }
 
-//function splitFile(data) {
-// completer le code ici
-//}
 
-//function addMovie(m) {
 
-//  listOfMovie.push(m);
+function addMovie(m) {
 
-//}
+    listOfMovie.push(m);
+
+}
