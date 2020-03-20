@@ -29,6 +29,7 @@ function htmlDivElement(movie) {
 function splitFile(data) {
 
     var result = []; //Création de la variable result qui correspond a un tableau
+
     var listOfLine = (data.split('\n')); //Creation de la variable listOfLine qui contient les 'data.split'  
     listOfLine.forEach(line => { /*On utilise la variable listOfLine sur laquelle on applique un forEach qui prend en parametre une variable line, ensuite on crée une variable tab qui elle correspond */
         var tab = line.split(',');
@@ -42,8 +43,6 @@ function createMovie(i, n, l) {
     var m = { index: i, name: n, length: l };
     return m;
 }
-
-
 
 function addMovie(m) {
 

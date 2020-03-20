@@ -1,26 +1,65 @@
-.divFilm{
+.divFilm {
     display: flex;
     width: 90%;
-    height: 100px;
-    background-color: rgb(235, 235, 235);
-    margin: 5px;
-    
-
+    height: 50px;
+    line-height: 20px;
+    background-color: lightgoldenrodyellow;
+    margin: 2px;
+    border-bottom: 5px solid black;
 }
 
-.divIndex{
-    
-    margin: 4px;
-
+.divIndex {
+    left: initial;
+    text-align: center;
+    background-color: lightseagreen;
+    color: black;
+    font-size: x-large;
+    width: 5%;
+    height: 30px;
+    border: solid 2px;
+    margin: 2px;
 }
 
-.divTitle{
-    margin: 4px;
+.divTitle {
+    width: 100%;
+    margin-left: 5%;
+    display: table-cell;
+    font-size: medium;
+    font-style: normal;
+    margin: 2px;
 }
 
-
-.playButton{
-    width: 50px;
-    height: 20px;
+p:hover {
+    text-transform: uppercase;
 }
 
+.zoom {
+    transition: transform .5s;
+    margin: auto;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+#refresh {
+    width: 10%;
+    height: 2px;
+    height: auto;
+    margin: auto;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(0, 157, 248), blue);
+    color: whitesmoke;
+}
+
+.titre {
+    width: 40%;
+    text-align: center;
+    margin-left: 600px;
+}
+
+#list {
+    align-content: space-around;
+}
