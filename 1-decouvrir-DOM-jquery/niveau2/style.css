@@ -1,7 +1,6 @@
-#list li {
+.divFilm {
     display: flex;
     font-size: 30px;
-    list-style: none;
     background-color: lightblue;
     border: 1px solid black;
     border-radius: 10px;
