@@ -45,7 +45,6 @@ function createMovie(i, n, l) {
 function addMovie(m) {
 
     listOfMovie.push(m);
-
 }
 
 function createPlayCallback(movie) {

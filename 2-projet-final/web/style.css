@@ -1,50 +1,65 @@
-#toolbar {
-    padding: 0.5em 0.5em 0.75em 0.5em;
-}
-
-.topmenu{
-    display: grid;
-    display: block;
-    background-color: rgba(119, 156, 153, 0.1);
-
-}
-
-#main{
-    display: flex;
-}
-
-
-#list{
-    
-    min-height: 200px;
-    height: 80vh;
-    width: 100%;
-}
-
-body{
-    height:100%; /* force the BODY element to match the height of the HTML element */
-}
-
-html{
-    min-height:100%;/* make sure it is at least as tall as the viewport */
-    position:relative;
-}
-
-.divFilm{
+.divFilm {
     display: flex;
     width: 90%;
-    line-height: 25px;
+    height: 50px;
+    line-height: 20px;
+    background-color: lightgoldenrodyellow;
+    margin: 2px;
+    border-bottom: 5px solid black;
 }
 
-
-.divIndex{
-    
+.divIndex {
+    left: initial;
+    text-align: center;
+    background-color: lightseagreen;
+    color: black;
+    font-size: x-large;
+    width: 5%;
+    height: 30px;
+    border: solid 2px;
     margin: 2px;
 }
 
-.divTitle{
-    margin: 2px;
+.divTitle {
     width: 100%;
+    margin-left: 5%;
+    display: table-cell;
+    font-size: medium;
+    font-style: normal;
+    margin: 2px;
 }
 
+p:hover {
+    text-transform: uppercase;
+}
 
+.zoom {
+    transition: transform .5s;
+    margin: auto;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+#refresh {
+    width: 10%;
+    height: 2px;
+    height: auto;
+    margin: auto;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(0, 157, 248), blue);
+    color: whitesmoke;
+}
+
+.titre {
+    width: 40%;
+    text-align: center;
+    margin-left: 600px;
+}
+
+#list {
+    align-content: space-around;
+}

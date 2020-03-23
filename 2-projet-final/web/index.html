@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>osc.js Web Socket Demo</title>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" type="text/css" media="all" href="style.css"></link>
-        <script src="node_modules/jquery/dist/jquery.js"></script>
-        <script src="node_modules/osc/dist/osc-browser.min.js"></script>
-        <script type="text/javascript" src="script.js"></script>
-    </head>
 
-    <body>
-        
-        <div class="topmenu">
-            <p><center><h1>Lecteur de film</h1></center></p>
+<head>
+    <title>osc.js Web Socket Demo</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <link rel="stylesheet" type="text/css" media="all" href="style.css"></link>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/osc/dist/osc-browser.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="topmenu">
+        <p>
+            <center>
+                <h1>Lecteur de film</h1>
+            </center>
+        </p>
+
+    </div>
+
+
+    <div id="main">
+
+        <div id="list">
+            <p>
+                <h1>playlist</h1>
+            </p>
         </div>
-       
-            
-        <div id="main">
-            
-            <div id="list" >
-                <p><h1>playlist</h1></p>
-            </div>
-    
-            <div id="config" >
-                <p><h1>config</h1></p>
-            </div>
+
+        <button id="refresh">Refresh</button>
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
 
 
+
+        <div id="config">
+            <p>
+                <h1>config</h1>
+            </p>
         </div>
 
 
-        
-    </body>
+    </div>
+
+
+
+</body>
+
 </html>
