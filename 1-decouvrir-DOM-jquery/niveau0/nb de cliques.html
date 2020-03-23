@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nb de fois que tu cliques</title>
+</head>
+
+<body>
+
+    <button onclick="incrementer()">Incrementer</button>
+    <div id="nombre">0</div>
+
+    <script>
+        function incrementer() {
+
+            nbclick = document.querySelector('#nombre').innerText++;
+        }
+    </script>
+
+</body>
+
+</html>
