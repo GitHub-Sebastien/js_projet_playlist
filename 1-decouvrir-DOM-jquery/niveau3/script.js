@@ -23,7 +23,7 @@ $(document).ready(function() { //Permet d'éxécuter des fonctions quand le DOM 
 
 function htmlDivElement(movie) {
 
-    return '<div class="divFilm">' + movie.index + movie.name + movie.length + '</div>';
+    return "<div class='divFilm zoom'><button type='button' class='btn btn-warning'>Play</button><div class ='divIndex'>" + movie.index + "</div><div class='divTitle'>" + movie.name + movie.length + "</div></div>";
 }
 
 function splitFile(data) {
